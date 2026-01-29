@@ -44,7 +44,7 @@ const About = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 md:gap-24 items-center">
                 <div ref={imageRef} className="relative aspect-[4/5] overflow-hidden group px-4 md:px-0">
                     <img
-                        src="/assets/about.jpg"
+                        src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&q=80&w=2000"
                         alt="Luxury Hotel Entrance"
                         className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110"
                     />
