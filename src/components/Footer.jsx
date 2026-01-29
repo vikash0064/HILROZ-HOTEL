@@ -6,9 +6,7 @@ const Footer = () => {
             <div className="lux-container">
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-24 lg:gap-32 text-center md:text-left">
                     <div className="col-span-1 md:col-span-2">
-                        <h1 className="text-3xl md:text-4xl font-serif tracking-[0.2em] text-[var(--accent-color)] mb-6 md:mb-10">
-                            HILROZ
-                        </h1>
+                        <img src="/logo.png" alt="HILROZ Logo" className="h-16 md:h-20 w-auto object-contain mb-8 mx-auto md:mx-0" />
                         <p className="max-w-md mx-auto md:mx-0 opacity-60 leading-relaxed font-light mb-8 md:mb-12 text-base md:text-lg">
                             Experience the pinnacle of hospitality in Amritsar. Where heritage meets contemporary luxury in every detail.
                         </p>
