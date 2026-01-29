@@ -29,7 +29,9 @@ const Navbar = () => {
                 }`}
         >
             <div className="flex items-center gap-2">
-                <img src="/logo.png" alt="HILROZ Logo" className="h-10 md:h-14 w-auto object-contain" />
+                <h1 className="text-xl md:text-2xl font-serif tracking-[0.2em] md:tracking-widest text-[var(--accent-color)]">
+                    HILROZ
+                </h1>
             </div>
 
             <div className="hidden md:flex items-center gap-12">
