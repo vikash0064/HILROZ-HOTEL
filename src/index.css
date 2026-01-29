@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:wght@100..900&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+    --color-primary-gold: #C5A059;
+    --color-primary-sand: #D4C5B0;
+    --color-luxury-ivory: #F9F7F2;
+    --color-luxury-charcoal: #1A1A1A;
+
+    --font-serif: "Playfair Display", serif;
+    --font-sans: "Montserrat", sans-serif;
+}
+
+:root {
+    --bg-color: #F9F7F2;
+    --text-color: #1A1A1A;
+    --accent-color: #C5A059;
+    --spacing-unit: 8px;
+}
+
+.dark {
+    --bg-color: #0A0A0A;
+    --text-color: #F9F7F2;
+    --accent-color: #D4C5B0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: initial;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-sans);
+    transition: background-color 0.5s ease, color 0.5s ease;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-serif);
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+section {
+    padding: 100px 20px;
+}
+
+@media (max-width: 768px) {
+    section {
+        padding: 60px 20px;
+    }
+}
+
+.lux-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.lux-link {
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.lux-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.lux-link:hover::after {
+    width: 100%;
+}
+
+.lux-button {
+    background: transparent;
+    border: 1px solid var(--accent-color);
+    padding: 12px 30px;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.lux-button:hover {
+    background: var(--accent-color);
+    color: #fff;
+}
+
+/* GSAP Scroll Trigger Classes */
+.gsap-reveal {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+canvas {
+    touch-action: none;
+}
+
+::selection {
+    background: var(--accent-color);
+    color: white;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 10px;
+}
