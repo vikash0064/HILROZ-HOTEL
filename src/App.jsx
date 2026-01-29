@@ -10,7 +10,6 @@ import Amenities from './components/Amenities';
 import Gallery from './components/Gallery';
 import Booking from './components/Booking';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
 import './index.css';
 
 function App() {
@@ -53,7 +52,6 @@ function App() {
           <Booking />
         </main>
         <Footer />
-        <WhatsAppButton />
       </div>
     </ThemeProvider>
   );
